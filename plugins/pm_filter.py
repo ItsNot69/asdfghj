@@ -185,6 +185,10 @@ async def next_page(bot, query):
                 InlineKeyboardButton(f'ꜱᴇʀɪᴇꜱ', 'sinfo')
             ]
         )
+        btn.insert(0, [
+        InlineKeyboardButton("! Sᴇɴᴅ Aʟʟ Tᴏ PM !", callback_data=f"send_fall#files#{offset}#{req}")
+    ])
+        
         btn.insert(1, 
          [
              InlineKeyboardButton('How To Watch', url='https://t.me/B4b7filedownload')
@@ -1610,11 +1614,14 @@ async def auto_filter(client, msg, spoll=False):
                 InlineKeyboardButton(f'ꜱᴇʀɪᴇꜱ', 'sinfo')
             ]
         )
+        btn.insert(0, [
+        InlineKeyboardButton("! Sᴇɴᴅ Aʟʟ Tᴏ PM !", callback_data=f"send_fall#files#{offset}#{req}")
+    ])
+        
     btn.insert(1, 
          [             
-             InlineKeyboardButton('How To Watch', url='https://t.me/B4b7filedownload')      ]
-
-    )
+             InlineKeyboardButton('How To Watch', url='https://t.me/B4b7filedownload')      
+         ])
 
     if offset != "":
         key = f"{message.chat.id}-{message.id}"

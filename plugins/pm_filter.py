@@ -244,7 +244,7 @@ async def next_page(bot, query):
         InlineKeyboardButton("! Sᴇɴᴅ Aʟʟ Tᴏ PM !", callback_data=f"send_fall#files#{offset}#{req}")
     ])
     btn.insert(0, [
-        InlineKeyboardButton('How To Watch', url='https://t.me/B4b7filedownload)
+        InlineKeyboardButton('How To Watch', url='https://t.me/B4b7filedownload')
     ])
     try:
         await query.edit_message_reply_markup(
@@ -355,7 +355,7 @@ async def language_check(bot, query):
         InlineKeyboardButton("! Sᴇɴᴅ Aʟʟ Tᴏ PM !", callback_data=f"send_fall#files#{offset}#{req}")
     ])
     btn.insert(0, [
-        InlineKeyboardButton('How To Watch', url='https://t.me/B4b7filedownload)
+        InlineKeyboardButton('How To Watch', url='https://t.me/B4b7filedownload')
     ])
 
         if offset != "":
@@ -1595,7 +1595,7 @@ async def auto_filter(client, msg, spoll=False):
         InlineKeyboardButton("! Sᴇɴᴅ Aʟʟ Tᴏ PM !", callback_data=f"send_fall#files#{offset}#{req}")
     ])
     btn.insert(0, [
-        InlineKeyboardButton('How To Watch', url='https://t.me/B4b7filedownload)
+        InlineKeyboardButton('How To Watch', url='https://t.me/B4b7filedownload')
     ])
 
     if offset != "":

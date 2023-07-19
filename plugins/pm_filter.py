@@ -185,15 +185,7 @@ async def next_page(bot, query):
                 InlineKeyboardButton(f'ꜱᴇʀɪᴇꜱ', 'sinfo')
             ]
         )
-        btn.insert(0, [
-        InlineKeyboardButton("! Sᴇɴᴅ Aʟʟ Tᴏ PM !", callback_data=f"send_fall#files#{offset}#{req}")
-    ])
         
-        btn.insert(1, 
-         [
-             InlineKeyboardButton('How To Watch', url='https://t.me/B4b7filedownload')
-         ]
-    )
     try:
         if settings['max_btn']:
             if 0 < offset <= 10:
@@ -259,6 +251,14 @@ async def next_page(bot, query):
                     InlineKeyboardButton("𝐍𝐄𝐗𝐓 ➪", callback_data=f"next_{req}_{key}_{n_offset}")
                 ],
             )
+            btn.insert(0, [
+        InlineKeyboardButton("! Sᴇɴᴅ Aʟʟ Tᴏ PM !", callback_data=f"send_fall#files#{offset}#{req}")
+    ])
+        
+        btn.insert(1, 
+         [
+             InlineKeyboardButton('How To Watch', url='https://t.me/B4b7filedownload')
+         ])
             
     try:
         await query.edit_message_reply_markup(
@@ -364,6 +364,14 @@ async def language_check(bot, query):
                     InlineKeyboardButton(f'ꜱᴇʀɪᴇꜱ', 'sinfo')
                 ]
             )
+            btn.insert(0, [
+        InlineKeyboardButton("! Sᴇɴᴅ Aʟʟ Tᴏ PM !", callback_data=f"send_fall#files#{offset}#{req}")
+    ])
+        
+        btn.insert(1, 
+         [
+             InlineKeyboardButton('How To Watch', url='https://t.me/B4b7filedownload')
+         ])
         
         if offset != "":
             key = f"{query.message.chat.id}-{query.message.id}"

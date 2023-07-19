@@ -251,7 +251,7 @@ async def next_page(bot, query):
                     InlineKeyboardButton("𝐍𝐄𝐗𝐓 ➪", callback_data=f"next_{req}_{key}_{n_offset}")
                 ],
             )
-           btn.insert(0, [
+            btn.insert(0, [
         InlineKeyboardButton("! Sᴇɴᴅ Aʟʟ Tᴏ PM !", callback_data=f"send_fall#files#{offset}#{req}")
     ])
         
@@ -1626,9 +1626,9 @@ async def auto_filter(client, msg, spoll=False):
         InlineKeyboardButton("! Sᴇɴᴅ Aʟʟ Tᴏ PM !", callback_data=f"send_fall#files#{offset}#{req}")
     ])
         
-        btn.insert(1, 
-         [
-             InlineKeyboardButton('How To Watch', url='https://t.me/B4b7filedownload')
+    btn.insert(1, 
+         [             
+             InlineKeyboardButton('How To Watch', url='https://t.me/B4b7filedownload')      
          ])
 
     if offset != "":

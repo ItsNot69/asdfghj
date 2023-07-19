@@ -251,7 +251,7 @@ async def next_page(bot, query):
                     InlineKeyboardButton("𝐍𝐄𝐗𝐓 ➪", callback_data=f"next_{req}_{key}_{n_offset}")
                 ],
             )
-           btn.insert(0, 
+           btn.insert(1, 
          [
              InlineKeyboardButton("! Sᴇɴᴅ Aʟʟ Tᴏ PM !", callback_data=f"send_fall#files#{offset}#{req}")
              InlineKeyboardButton('How To Watch', url='https://t.me/B4b7filedownload')
@@ -361,7 +361,7 @@ async def language_check(bot, query):
                     InlineKeyboardButton(f'ꜱᴇʀɪᴇꜱ', 'sinfo')
                 ]
             )
-            btn.insert(0, 
+            btn.insert(1, 
          [
              InlineKeyboardButton("! Sᴇɴᴅ Aʟʟ Tᴏ PM !", callback_data=f"send_fall#files#{offset}#{req}")
              InlineKeyboardButton('How To Watch', url='https://t.me/B4b7filedownload')
@@ -813,7 +813,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data.startswith("send_fall"):
         temp_var, ident, offset, userid = query.data.split("#")
-        if int(userid) not in [query.from_user.id, 0]:
+        if int(userid) not in [query.from_user.id, 1]:
             return await query.answer(script.ALRT_TXT.format(query.from_user.first_name), show_alert=True)
         files = temp.SEND_ALL_TEMP.get(query.from_user.id)
         is_over = await send_all(client, query.from_user.id, files, ident)
@@ -1616,7 +1616,7 @@ async def auto_filter(client, msg, spoll=False):
                 InlineKeyboardButton(f'ꜱᴇʀɪᴇꜱ', 'sinfo')
             ]
         )
-        btn.insert(0, 
+        btn.insert(1, 
          [
              InlineKeyboardButton("! Sᴇɴᴅ Aʟʟ Tᴏ PM !", callback_data=f"send_fall#files#{offset}#{req}")
              InlineKeyboardButton('How To Watch', url='https://t.me/B4b7filedownload')      

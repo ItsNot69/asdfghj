@@ -251,12 +251,9 @@ async def next_page(bot, query):
                     InlineKeyboardButton("𝐍𝐄𝐗𝐓 ➪", callback_data=f"next_{req}_{key}_{n_offset}")
                 ],
             )
-            btn.insert(0, [
-        InlineKeyboardButton("! Sᴇɴᴅ Aʟʟ Tᴏ PM !", callback_data=f"send_fall#files#{offset}#{req}")
-    ])
-        
-        btn.insert(1, 
+           btn.insert(0, 
          [
+             InlineKeyboardButton("! Sᴇɴᴅ Aʟʟ Tᴏ PM !", callback_data=f"send_fall#files#{offset}#{req}")
              InlineKeyboardButton('How To Watch', url='https://t.me/B4b7filedownload')
          ])
             
@@ -364,12 +361,9 @@ async def language_check(bot, query):
                     InlineKeyboardButton(f'ꜱᴇʀɪᴇꜱ', 'sinfo')
                 ]
             )
-            btn.insert(0, [
-        InlineKeyboardButton("! Sᴇɴᴅ Aʟʟ Tᴏ PM !", callback_data=f"send_fall#files#{offset}#{req}")
-    ])
-        
-        btn.insert(1, 
+            btn.insert(0, 
          [
+             InlineKeyboardButton("! Sᴇɴᴅ Aʟʟ Tᴏ PM !", callback_data=f"send_fall#files#{offset}#{req}")
              InlineKeyboardButton('How To Watch', url='https://t.me/B4b7filedownload')
          ])
         
@@ -1622,12 +1616,9 @@ async def auto_filter(client, msg, spoll=False):
                 InlineKeyboardButton(f'ꜱᴇʀɪᴇꜱ', 'sinfo')
             ]
         )
-        btn.insert(0, [
-        InlineKeyboardButton("! Sᴇɴᴅ Aʟʟ Tᴏ PM !", callback_data=f"send_fall#files#{offset}#{req}")
-    ])
-        
-    btn.insert(1, 
-         [             
+        btn.insert(0, 
+         [
+             InlineKeyboardButton("! Sᴇɴᴅ Aʟʟ Tᴏ PM !", callback_data=f"send_fall#files#{offset}#{req}")
              InlineKeyboardButton('How To Watch', url='https://t.me/B4b7filedownload')      
          ])
 
